@@ -7,9 +7,9 @@ let prizes_config = {
         "3000 Credits",
         "35% Off",
         "Hard Luck",
-        "70% OFF",
+        "70% Off",
         "Swagpack",
-        "100% OFF",
+        "100% Off",
         "Netflix Subscription",
         "50% Off",
         "Amazon Voucher",
@@ -124,8 +124,8 @@ function update() {
 }
 
 function spinwheel() {
-    this.button.setScale(0.027);
     if (this.isSpinning === false && this.noOfSpinsLeft > 0) {
+        this.button.setScale(0.027);
         this.noOfSpinsLeft -= 1;
         this.music.play();
         this.isSpinning = true;
